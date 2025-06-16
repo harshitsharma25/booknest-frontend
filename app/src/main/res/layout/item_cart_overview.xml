@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:elevation="8dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvCartBook"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                >
+                <ImageView
+                    android:id="@+id/ivCartBookOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Book Cover"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvCartBookTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:textSize="18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                tools:text="Title:"
+
+                app:layout_constraintStart_toEndOf="@id/mcvCartBook"
+                app:layout_constraintEnd_toStartOf="@id/tvItemPrice"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="₹189.0"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/my_primary"
+
+                app:layout_constraintTop_toTopOf="@id/tvCartBookTitle"
+                app:layout_constraintBottom_toBottomOf="@id/tvCartBookTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+            <!-- Second TextView -->
+            <TextView
+                android:id="@+id/tvCartBookAuthorName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:textSize="12sp"
+                android:textColor="@color/light_black"
+                tools:text="Author :"
+                android:maxLines="2"
+                app:layout_constraintStart_toEndOf="@id/mcvCartBook"
+                app:layout_constraintTop_toBottomOf="@id/tvCartBookTitle"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Third TextView -->
+            <TextView
+                android:id="@+id/tvCartPublishYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="140dp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:textSize="14sp"
+                android:textColor="@color/light_black"
+                tools:text="Date Published :"
+                android:maxLines="1"
+                app:layout_constraintStart_toEndOf="@id/mcvCartBook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCartBookAuthorName"
+                />
+
+            <TextView
+                android:id="@+id/tvBookQuantity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                tools:text="Quantity:"
+
+                app:layout_constraintTop_toBottomOf="@id/tvCartPublishYear"
+                app:layout_constraintStart_toEndOf="@id/mcvCartBook"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

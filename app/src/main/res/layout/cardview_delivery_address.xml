@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvDeliveryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_address"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/tvAddressOne"/>
+
+            <TextView
+                android:id="@+id/tvAddressOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="47,New Alok Meerut Road , Hapur"
+                android:textSize="14sp"
+                android:maxLines="2"
+                app:layout_constraintTop_toBottomOf="@id/tvDeliveryAddress"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvChangeAddress"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/my_primary"
+                app:layout_constraintTop_toBottomOf="@id/tvAddressOne"
+                app:layout_constraintStart_toStartOf="@id/tvAddressOne"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_address"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Something</string>
+    <string name="Search">Search Here</string>
+    <string name="home">Home</string>
+    <string name="Cart">Cart</string>
+    <string name="user">Profile</string>
+    <string name="profile">Profile</string>
+    <string name="profile_text">Welcome To The Profile</string>
+    <string name="item_qty">Qty :</string>
+    <string name="my_cart">My Cart</string>
+    <string name="orderSummary">Order Summary</string>
+    <string name="Pay">Pay Amount</string>
+    <string name="change_address">Change Address</string>
+    <string name="Payment_details">Payment Details</string>
+    <string name="tvMRPtag">MRP Total</string>
+    <string name="tvShippingTag">Shipping/Delivery Charges</string>
+    <string name="tvTotalPayable">Total Payable</string>
+    <string name="tvMRP">₹%d</string>
+    <string name="tvShippingCharge">₹</string>
+    <string name="tvTotalPayableAmount">₹</string>
+</resources>

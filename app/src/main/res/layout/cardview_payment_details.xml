@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView android:id="@+id/mcvPaymentDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    app:layout_constraintTop_toBottomOf="@id/mcvDeliveryAddress"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvPaymentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Payment_details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvMRPtag"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMRPtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvMRPtag"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentDetails"
+        app:layout_constraintBottom_toTopOf="@id/tvShippingTag"/>
+
+    <TextView
+        android:id="@+id/tvMRP"
+        android:text="@string/tvMRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvMRPtag"
+        app:layout_constraintBottom_toBottomOf="@id/tvMRPtag"
+
+        />
+
+    <TextView
+        android:id="@+id/tvShippingTag"
+        android:text="@string/tvShippingTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMRPtag"/>
+
+    <TextView
+        android:id="@+id/tvShippingCharge"
+        android:text="@string/tvShippingCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvShippingTag"
+        app:layout_constraintBottom_toBottomOf="@id/tvShippingTag"
+
+        />
+
+    <TextView
+        android:id="@+id/tvTotalPayable"
+        android:text="@string/tvTotalPayable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/my_primary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShippingTag"/>
+
+    <TextView
+        android:id="@+id/tvTotalPayableAmount"
+        android:text="@string/tvTotalPayableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTotalPayable"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalPayable"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

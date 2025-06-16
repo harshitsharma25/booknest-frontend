@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.something.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.something.ui.search.SearchFragment"
+        android:label="@string/Search"
+        tools:layout="@layout/fragment_search"
+    />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.something.ui.cart.CartFragment"
+        android:label="@string/Cart"
+        tools:layout="@layout/fragment_cart">
+
+        <action
+            android:id="@+id/action_cartFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.something.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile"
+    />
+
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.example.something.ui.orderSummary.OrderSummaryFragment"
+        android:label="@string/orderSummary"
+        tools:layout="@layout/fragment_ordersummary"
+    />
+
+</navigation>
