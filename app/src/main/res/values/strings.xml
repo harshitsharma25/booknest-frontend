@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Something</string>
+    <string name="app_name">BookNest</string>
     <string name="Search">Search Here</string>
     <string name="home">Home</string>
     <string name="Cart">Cart</string>
@@ -18,4 +18,6 @@
     <string name="tvMRP">₹%d</string>
     <string name="tvShippingCharge">₹</string>
     <string name="tvTotalPayableAmount">₹</string>
+    <string name="total_payable">₹%1$d</string>
+
 </resources>

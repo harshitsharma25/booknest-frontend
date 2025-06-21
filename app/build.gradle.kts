@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.ksp)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.something"
+    namespace = "com.booknest.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.something"
+        applicationId = "com.booknest.app"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -68,6 +69,13 @@ dependencies {
     implementation ("com.google.devtools.ksp:symbol-processing-api:2.0.10-1.0.24")
 
     implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+    // firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    //firebase auth
+    implementation("com.google.firebase:firebase-auth:23.1.0")
+    // firebase firestore
+    implementation("com.google.firebase:firebase-firestore:25.1.1")
 
 
     implementation(libs.androidx.core.ktx)

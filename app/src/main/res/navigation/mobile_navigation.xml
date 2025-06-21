@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.something.ui.home.HomeFragment"
+        android:name="com.booknest.app.ui.home.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home">
 
@@ -22,14 +22,14 @@
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.something.ui.search.SearchFragment"
+        android:name="com.booknest.app.ui.search.SearchFragment"
         android:label="@string/Search"
         tools:layout="@layout/fragment_search"
     />
 
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.example.something.ui.cart.CartFragment"
+        android:name="com.booknest.app.ui.cart.CartFragment"
         android:label="@string/Cart"
         tools:layout="@layout/fragment_cart">
 
@@ -40,14 +40,14 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.something.ui.profile.ProfileFragment"
+        android:name="com.booknest.app.ui.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile"
     />
 
     <fragment
         android:id="@+id/orderSummaryFragment"
-        android:name="com.example.something.ui.orderSummary.OrderSummaryFragment"
+        android:name="com.booknest.app.ui.orderSummary.OrderSummaryFragment"
         android:label="@string/orderSummary"
         tools:layout="@layout/fragment_ordersummary"
     />
