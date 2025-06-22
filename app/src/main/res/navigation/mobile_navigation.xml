@@ -5,7 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/homeFragment">
 
-
+    <!-- Home -->
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.booknest.app.ui.home.HomeFragment"
@@ -16,17 +16,19 @@
             android:id="@+id/action_homeFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
 
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
     </fragment>
 
-
-
+    <!-- Search -->
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.booknest.app.ui.search.SearchFragment"
         android:label="@string/Search"
-        tools:layout="@layout/fragment_search"
-    />
+        tools:layout="@layout/fragment_search" />
 
+    <!-- Cart -->
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.booknest.app.ui.cart.CartFragment"
@@ -35,21 +37,57 @@
 
         <action
             android:id="@+id/action_cartFragment_to_orderSummaryFragment"
-            app:destination="@id/orderSummaryFragment"/>
+            app:destination="@id/orderSummaryFragment" />
     </fragment>
 
+    <!-- Profile -->
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.booknest.app.ui.profile.ProfileFragment"
         android:label="@string/profile"
-        tools:layout="@layout/fragment_profile"
-    />
+        tools:layout="@layout/fragment_profile" />
 
+    <!-- Order Summary -->
     <fragment
         android:id="@+id/orderSummaryFragment"
         android:name="com.booknest.app.ui.orderSummary.OrderSummaryFragment"
         android:label="@string/orderSummary"
-        tools:layout="@layout/fragment_ordersummary"
-    />
+        tools:layout="@layout/fragment_ordersummary" />
+
+    <!-- Sign In -->
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.booknest.app.ui.auth.SignInFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_signin">
+
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Sign Up -->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.booknest.app.ui.auth.SignUpFragment"
+        android:label="@string/sign_up"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>

@@ -8,4 +8,9 @@
     <color name="my_primary">#5996FD</color>
     <color name="red">#FF4343</color>
     <color name="pink">#D901F0</color>
+    <color name="colorAccent">#0C90F1</color>
+
+    <color name="text_color">#ABADB1</color>
+    <color name="secondary_text_color">#7A8089</color>
+    <color name="snackbar_error_color">#F72400</color>
 </resources>

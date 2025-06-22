@@ -8,4 +8,9 @@
     </style>
 
     <style name="Theme.Something" parent="Base.Theme.Something" />
+
+    <style name="CustomToolbarStyle">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorControlNormal">#00000000</item>
+    </style>
 </resources>

@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         // Connect BottomNavigationView with NavController (NavigationUI)
         NavigationUI.setupWithNavController(binding.bottomNavigationView, navController)
 
+        // Handle conditional start destination
+        val destination = intent.getStringExtra("destination")
+        if (destination == "signin") {
+            navController.navigate(R.id.signInFragment)
+        } // else it defaults to home
+
         // Hide BottomNav for specific destinations (e.g., OrderSummaryFragment)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {

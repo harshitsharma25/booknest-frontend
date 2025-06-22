@@ -8,4 +8,14 @@
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
+    <style name="CircularImageViewStyle" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="shapeAppearanceOverlay">@style/CircularShape</item>
+    </style>
+
+    <style name="CircularShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
 </resources>
